@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */; };
 		BBFD977721E81E4A0037F596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD977621E81E4A0037F596 /* AppDelegate.swift */; };
 		BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFD977A21E81E4A0037F596 /* Main.storyboard */; };
 		BBFD977F21E81E4A0037F596 /* GMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBFD977D21E81E4A0037F596 /* GMemo.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cocoa.jpeg; sourceTree = "<group>"; };
 		BBFD977321E81E4A0037F596 /* GMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFD977621E81E4A0037F596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBFD977B21E81E4A0037F596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBF43F9721E84E2C007BB0B0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		BBFD976A21E81E4A0037F596 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		BBFD977521E81E4A0037F596 /* GMemo */ = {
 			isa = PBXGroup;
 			children = (
+				BBF43F9721E84E2C007BB0B0 /* Resource */,
 				BBFD977621E81E4A0037F596 /* AppDelegate.swift */,
 				BBFD977A21E81E4A0037F596 /* Main.storyboard */,
 				BBFD979321E82CEB0037F596 /* MemoData.swift */,
@@ -148,6 +159,7 @@
 				BBFD978421E81E4B0037F596 /* LaunchScreen.storyboard in Resources */,
 				BBFD978121E81E4B0037F596 /* Assets.xcassets in Resources */,
 				BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */,
+				BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

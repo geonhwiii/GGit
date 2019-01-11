@@ -43,7 +43,10 @@ class MemoListVC: UITableViewController {
         let cellId = row.image == nil ? "memoCell" : "memoCellWithImage"
         
         // 재사용 큐
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! MemoCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as? MemoCell else {
+            fatalError("Could not dequeue cell")
+    
+        }
         
         // memoCell 내용 구성
         cell.subject?.text = row.title
