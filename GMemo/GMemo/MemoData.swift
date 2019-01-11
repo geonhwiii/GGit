@@ -14,5 +14,6 @@ class MemoData {
     var title: String?      // 메모 제목
     var contents: String?   // 메모 내용
     var image: UIImage?     // 이미지
-    var regdate: Date?      // 작성일
+    var regdate: Date?      //작성일
+    var regTime: Date?      // 작성시간
 }

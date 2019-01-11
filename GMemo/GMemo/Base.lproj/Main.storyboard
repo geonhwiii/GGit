@@ -82,6 +82,12 @@
                                         <constraint firstItem="iaS-2v-OFg" firstAttribute="leading" secondItem="V4Z-Yj-JtC" secondAttribute="leadingMargin" constant="10" id="pu4-iJ-qKV"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="KO4-gj-I43" id="EUu-ED-lvg"/>
+                                    <outlet property="regTime" destination="kLo-HM-M5E" id="zVa-Xv-igv"/>
+                                    <outlet property="regdate" destination="YSs-R4-GWD" id="OwL-uy-sxW"/>
+                                    <outlet property="subject" destination="iaS-2v-OFg" id="Rn1-Xj-ziB"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="Nj1-7n-dB1" customClass="MemoCell" customModule="GMemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
@@ -152,6 +158,13 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="avi-dZ-WMs" secondAttribute="trailing" id="lvr-2v-av5"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="Ddh-7l-wLm" id="gdo-30-Wob"/>
+                                    <outlet property="img" destination="GLZ-pE-Z8x" id="KEm-1C-jaR"/>
+                                    <outlet property="regTime" destination="1V8-ij-Cms" id="lGP-rH-949"/>
+                                    <outlet property="regdate" destination="ItP-iy-5wo" id="7Hb-6p-nBR"/>
+                                    <outlet property="subject" destination="NVs-2z-8By" id="FqN-Ct-hIP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
