@@ -118,6 +118,7 @@
                                             <rect key="frame" x="16" y="11" width="58" height="58"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="GLZ-pE-Z8x" secondAttribute="height" multiplier="1:1" id="htX-cx-sbk"/>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="vcc-fL-7iX"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="avi-dZ-WMs">
@@ -248,7 +249,7 @@
         <!--상세 화면-->
         <scene sceneID="iln-7X-rVw">
             <objects>
-                <viewController id="Snd-Kb-69S" customClass="MemoReadVC" customModule="GMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" id="Snd-Kb-69S" customClass="MemoReadVC" customModule="GMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s1P-aL-eb0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,6 +291,11 @@
                         <viewLayoutGuide key="safeArea" id="J5L-Z9-J6Z"/>
                     </view>
                     <navigationItem key="navigationItem" title="상세 화면" id="egC-aB-kqA"/>
+                    <connections>
+                        <outlet property="contents" destination="nSJ-oL-3i4" id="kc8-wM-xyc"/>
+                        <outlet property="img" destination="vfT-sz-EeB" id="zSA-1V-mtD"/>
+                        <outlet property="subject" destination="xlO-Bk-fmX" id="BPC-YO-fMt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Km1-G8-vbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

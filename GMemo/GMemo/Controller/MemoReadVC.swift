@@ -10,12 +10,30 @@ import UIKit
 
 class MemoReadVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    // MARK: - Properties
+    // 콘텐츠 데이터를 저장하는 변수
+    var param : MemoData?
     
+    // MARK: IBOutlets
+    @IBOutlet var subject: UILabel!
+    @IBOutlet var contents: UILabel!
+    @IBOutlet var img: UIImageView!
+    
+    override func viewDidLoad() {
+        // param값을 각 아울렛에 입력
+        self.subject.text = param?.title
+        self.contents.text = param?.contents
+        self.img.image = param?.image
+
+        let dateFormat = DateFormatter()
+        let timeFormat = DateFormatter()
+        dateFormat.dateFormat = "dd일 "
+        timeFormat.dateFormat = "HH:mm분에 작성됨"
+        let dateString = dateFormat.string(from: (param?.regdate)!)
+        let timeString = timeFormat.string(from: (param?.regTime)!)
+        
+        self.navigationItem.title = dateString + timeString
+    }
 
     /*
     // MARK: - Navigation
