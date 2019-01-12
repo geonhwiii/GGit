@@ -40,6 +40,10 @@ class RevealViewController: UIViewController {
             // 3.vc에 부모 뷰 컨트롤러가 바뀌었음을 알림.
             vc.didMove(toParent: self)
             
+            // 프론트 컨트롤러의 델리게이트 변수에 참조 정보를 넣어준다.
+            let frontVC = vc.viewControllers[0] as? FrontViewController
+            frontVC?.delegate = self
+            
         }
         
     }
