@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB692AA021E98CBF00C2AC33 /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB692A9F21E98CBF00C2AC33 /* CSLogButton.swift */; };
+		BB692AA221E98DC700C2AC33 /* button-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AA121E98DC700C2AC33 /* button-bg.png */; };
+		BB692AA421E9929B00C2AC33 /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AA321E9929A00C2AC33 /* warning-icon-60@2x.png */; };
+		BB692AA621E992A100C2AC33 /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AA521E992A100C2AC33 /* memo-background@2x.png */; };
 		BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */; };
 		BBFD977721E81E4A0037F596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD977621E81E4A0037F596 /* AppDelegate.swift */; };
 		BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFD977A21E81E4A0037F596 /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB692A9F21E98CBF00C2AC33 /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
+		BB692AA121E98DC700C2AC33 /* button-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg.png"; sourceTree = "<group>"; };
+		BB692AA321E9929A00C2AC33 /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-60@2x.png"; sourceTree = "<group>"; };
+		BB692AA521E992A100C2AC33 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
 		BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cocoa.jpeg; sourceTree = "<group>"; };
 		BBFD977321E81E4A0037F596 /* GMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFD977621E81E4A0037F596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +58,10 @@
 		BBF43F9721E84E2C007BB0B0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BB692AA121E98DC700C2AC33 /* button-bg.png */,
 				BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */,
+				BB692AA521E992A100C2AC33 /* memo-background@2x.png */,
+				BB692AA321E9929A00C2AC33 /* warning-icon-60@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -77,12 +88,13 @@
 				BBF43F9721E84E2C007BB0B0 /* Resource */,
 				BBFD977621E81E4A0037F596 /* AppDelegate.swift */,
 				BBFD977A21E81E4A0037F596 /* Main.storyboard */,
-				BBFD979321E82CEB0037F596 /* MemoData.swift */,
 				BBFD978021E81E4B0037F596 /* Assets.xcassets */,
 				BBFD978221E81E4B0037F596 /* LaunchScreen.storyboard */,
 				BBFD978521E81E4B0037F596 /* Info.plist */,
 				BBFD977D21E81E4A0037F596 /* GMemo.xcdatamodeld */,
 				BBFD979521E82D7B0037F596 /* Controller */,
+				BBFD979321E82CEB0037F596 /* MemoData.swift */,
+				BB692A9F21E98CBF00C2AC33 /* CSLogButton.swift */,
 			);
 			path = GMemo;
 			sourceTree = "<group>";
@@ -156,9 +168,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB692AA621E992A100C2AC33 /* memo-background@2x.png in Resources */,
 				BBFD978421E81E4B0037F596 /* LaunchScreen.storyboard in Resources */,
+				BB692AA221E98DC700C2AC33 /* button-bg.png in Resources */,
 				BBFD978121E81E4B0037F596 /* Assets.xcassets in Resources */,
 				BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */,
+				BB692AA421E9929B00C2AC33 /* warning-icon-60@2x.png in Resources */,
 				BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB692AA021E98CBF00C2AC33 /* CSLogButton.swift in Sources */,
 				BBFD978C21E82C3E0037F596 /* MemoListVC.swift in Sources */,
 				BBFD979021E82C740037F596 /* MemoCell.swift in Sources */,
 				BBFD979221E82CD00037F596 /* MemoReadVC.swift in Sources */,
