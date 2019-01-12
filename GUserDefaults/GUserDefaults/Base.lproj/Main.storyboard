@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fIL-6H-w6d">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="TFG-Tp-GQn">
+            <objects>
+                <tableViewController id="Z0R-r9-DKK" customClass="ListViewController" customModule="GUserDefaults" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="s3S-dt-4Rt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="zsY-Qk-OeD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1SB-90-IEc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1SB-90-IEc" id="BYJ-lZ-koD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jye-pa-ijg">
+                                                    <rect key="frame" x="16" y="11.666666666666666" width="30" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC0-Sd-1xp">
+                                                    <rect key="frame" x="314" y="11.666666666666666" width="45" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aC0-Sd-1xp" firstAttribute="top" secondItem="Jye-pa-ijg" secondAttribute="top" id="Bsd-Ft-EVD"/>
+                                                <constraint firstItem="aC0-Sd-1xp" firstAttribute="centerY" secondItem="BYJ-lZ-koD" secondAttribute="centerY" id="UPR-En-Y5j"/>
+                                                <constraint firstItem="Jye-pa-ijg" firstAttribute="leading" secondItem="BYJ-lZ-koD" secondAttribute="leadingMargin" id="ZmD-XT-iqy"/>
+                                                <constraint firstItem="aC0-Sd-1xp" firstAttribute="bottom" secondItem="Jye-pa-ijg" secondAttribute="bottom" id="h2H-uz-Rsv"/>
+                                                <constraint firstAttribute="trailing" secondItem="aC0-Sd-1xp" secondAttribute="trailing" constant="16" id="mZ9-Ch-4jg"/>
+                                                <constraint firstItem="aC0-Sd-1xp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jye-pa-ijg" secondAttribute="trailing" constant="8" symbolic="YES" id="qYZ-9P-o1l"/>
+                                                <constraint firstItem="Jye-pa-ijg" firstAttribute="centerY" secondItem="BYJ-lZ-koD" secondAttribute="centerY" id="yYA-ZO-Iti"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="or5-oJ-81H">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="or5-oJ-81H" id="1HS-Kp-0Vk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJN-hK-Qxf">
+                                                    <rect key="frame" x="16" y="8" width="30" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Rfl-gh-KqP">
+                                                    <rect key="frame" x="306" y="8" width="53" height="29"/>
+                                                    <segments>
+                                                        <segment title="남"/>
+                                                        <segment title="여"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="changeGender:" destination="Z0R-r9-DKK" eventType="touchUpInside" id="go1-yq-xiJ"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rfl-gh-KqP" firstAttribute="top" secondItem="cJN-hK-Qxf" secondAttribute="top" id="HtC-jY-bBP"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rfl-gh-KqP" secondAttribute="trailing" constant="16" id="Mp0-1K-SLJ"/>
+                                                <constraint firstItem="cJN-hK-Qxf" firstAttribute="leading" secondItem="1HS-Kp-0Vk" secondAttribute="leadingMargin" id="a57-gC-r10"/>
+                                                <constraint firstItem="Rfl-gh-KqP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cJN-hK-Qxf" secondAttribute="trailing" id="rjE-Ia-bSi"/>
+                                                <constraint firstItem="Rfl-gh-KqP" firstAttribute="bottom" secondItem="cJN-hK-Qxf" secondAttribute="bottom" id="tgP-2j-1hG"/>
+                                                <constraint firstItem="cJN-hK-Qxf" firstAttribute="centerY" secondItem="1HS-Kp-0Vk" secondAttribute="centerY" id="zIY-ue-NJW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xNA-ho-2QX">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xNA-ho-2QX" id="6VO-wz-HCy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결혼여부" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcp-lt-glV">
+                                                    <rect key="frame" x="16" y="11.666666666666666" width="59" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4QX-YJ-YNr">
+                                                    <rect key="frame" x="310" y="6.3333333333333321" width="51" height="30.999999999999996"/>
+                                                    <connections>
+                                                        <action selector="changeMarried:" destination="Z0R-r9-DKK" eventType="touchUpInside" id="ZXe-Dk-Xey"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wcp-lt-glV" firstAttribute="centerY" secondItem="6VO-wz-HCy" secondAttribute="centerY" id="J9O-9L-6il"/>
+                                                <constraint firstItem="4QX-YJ-YNr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wcp-lt-glV" secondAttribute="trailing" constant="8" symbolic="YES" id="VA2-yd-wSB"/>
+                                                <constraint firstItem="4QX-YJ-YNr" firstAttribute="centerY" secondItem="6VO-wz-HCy" secondAttribute="centerY" id="Z7D-QG-gdj"/>
+                                                <constraint firstItem="Wcp-lt-glV" firstAttribute="leading" secondItem="6VO-wz-HCy" secondAttribute="leadingMargin" id="jwI-WO-Jxy"/>
+                                                <constraint firstAttribute="trailing" secondItem="4QX-YJ-YNr" secondAttribute="trailing" constant="16" id="yXu-1L-bUP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Z0R-r9-DKK" id="WIi-A2-31c"/>
+                            <outlet property="delegate" destination="Z0R-r9-DKK" id="7Cx-Ih-QDA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="n8J-s5-Xcq"/>
+                    <connections>
+                        <outlet property="gender" destination="Rfl-gh-KqP" id="TsF-Kq-PHj"/>
+                        <outlet property="married" destination="4QX-YJ-YNr" id="P1c-66-UQ3"/>
+                        <outlet property="name" destination="aC0-Sd-1xp" id="qVw-3d-LIV"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GbP-y6-rk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088.8" y="90.886699507389167"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wDw-Uy-DoC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fIL-6H-w6d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xY6-ie-Rvd">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z0R-r9-DKK" kind="relationship" relationship="rootViewController" id="2kP-vZ-0gX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7o9-gb-ZBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="356" y="91.304347826086968"/>
+        </scene>
+    </scenes>
+</document>
