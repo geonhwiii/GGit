@@ -11,6 +11,18 @@
 		BB692AA221E98DC700C2AC33 /* button-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AA121E98DC700C2AC33 /* button-bg.png */; };
 		BB692AA421E9929B00C2AC33 /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AA321E9929A00C2AC33 /* warning-icon-60@2x.png */; };
 		BB692AA621E992A100C2AC33 /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AA521E992A100C2AC33 /* memo-background@2x.png */; };
+		BB692AAB21E9977300C2AC33 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB692AA921E9977300C2AC33 /* SWRevealViewController.m */; };
+		BB692AB421E997DC00C2AC33 /* icon06.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AAC21E997DB00C2AC33 /* icon06.png */; };
+		BB692AB521E997DC00C2AC33 /* icon03.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AAD21E997DC00C2AC33 /* icon03.png */; };
+		BB692AB621E997DC00C2AC33 /* icon04.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AAE21E997DC00C2AC33 /* icon04.png */; };
+		BB692AB721E997DC00C2AC33 /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AAF21E997DC00C2AC33 /* sidemenu.png */; };
+		BB692AB821E997DC00C2AC33 /* icon01.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AB021E997DC00C2AC33 /* icon01.png */; };
+		BB692AB921E997DC00C2AC33 /* icon02.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AB121E997DC00C2AC33 /* icon02.png */; };
+		BB692ABA21E997DC00C2AC33 /* account@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB692AB221E997DC00C2AC33 /* account@2x.jpg */; };
+		BB692ABB21E997DC00C2AC33 /* icon05.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692AB321E997DC00C2AC33 /* icon05.png */; };
+		BB692ABD21E997EF00C2AC33 /* profile-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692ABC21E997EF00C2AC33 /* profile-bg.png */; };
+		BB692ABF21E99F8300C2AC33 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB692ABE21E99F8300C2AC33 /* SideBarVC.swift */; };
+		BB692AC121E9B8C400C2AC33 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB692AC021E9B8C400C2AC33 /* ProfileVC.swift */; };
 		BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */; };
 		BBFD977721E81E4A0037F596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD977621E81E4A0037F596 /* AppDelegate.swift */; };
 		BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFD977A21E81E4A0037F596 /* Main.storyboard */; };
@@ -29,6 +41,20 @@
 		BB692AA121E98DC700C2AC33 /* button-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg.png"; sourceTree = "<group>"; };
 		BB692AA321E9929A00C2AC33 /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-60@2x.png"; sourceTree = "<group>"; };
 		BB692AA521E992A100C2AC33 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
+		BB692AA821E9977200C2AC33 /* GMemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB692AA921E9977300C2AC33 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		BB692AAA21E9977300C2AC33 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		BB692AAC21E997DB00C2AC33 /* icon06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon06.png; sourceTree = "<group>"; };
+		BB692AAD21E997DC00C2AC33 /* icon03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon03.png; sourceTree = "<group>"; };
+		BB692AAE21E997DC00C2AC33 /* icon04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon04.png; sourceTree = "<group>"; };
+		BB692AAF21E997DC00C2AC33 /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidemenu.png; sourceTree = "<group>"; };
+		BB692AB021E997DC00C2AC33 /* icon01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon01.png; sourceTree = "<group>"; };
+		BB692AB121E997DC00C2AC33 /* icon02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon02.png; sourceTree = "<group>"; };
+		BB692AB221E997DC00C2AC33 /* account@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "account@2x.jpg"; sourceTree = "<group>"; };
+		BB692AB321E997DC00C2AC33 /* icon05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon05.png; sourceTree = "<group>"; };
+		BB692ABC21E997EF00C2AC33 /* profile-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-bg.png"; sourceTree = "<group>"; };
+		BB692ABE21E99F8300C2AC33 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
+		BB692AC021E9B8C400C2AC33 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cocoa.jpeg; sourceTree = "<group>"; };
 		BBFD977321E81E4A0037F596 /* GMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFD977621E81E4A0037F596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,10 +84,19 @@
 		BBF43F9721E84E2C007BB0B0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BB692AB221E997DC00C2AC33 /* account@2x.jpg */,
+				BB692AB021E997DC00C2AC33 /* icon01.png */,
+				BB692AB121E997DC00C2AC33 /* icon02.png */,
+				BB692AAD21E997DC00C2AC33 /* icon03.png */,
+				BB692AAE21E997DC00C2AC33 /* icon04.png */,
+				BB692AB321E997DC00C2AC33 /* icon05.png */,
+				BB692AAC21E997DB00C2AC33 /* icon06.png */,
+				BB692AAF21E997DC00C2AC33 /* sidemenu.png */,
 				BB692AA121E98DC700C2AC33 /* button-bg.png */,
 				BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */,
 				BB692AA521E992A100C2AC33 /* memo-background@2x.png */,
 				BB692AA321E9929A00C2AC33 /* warning-icon-60@2x.png */,
+				BB692ABC21E997EF00C2AC33 /* profile-bg.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -85,6 +120,9 @@
 		BBFD977521E81E4A0037F596 /* GMemo */ = {
 			isa = PBXGroup;
 			children = (
+				BB692AAA21E9977300C2AC33 /* SWRevealViewController.h */,
+				BB692AA921E9977300C2AC33 /* SWRevealViewController.m */,
+				BB692AA821E9977200C2AC33 /* GMemo-Bridging-Header.h */,
 				BBF43F9721E84E2C007BB0B0 /* Resource */,
 				BBFD977621E81E4A0037F596 /* AppDelegate.swift */,
 				BBFD977A21E81E4A0037F596 /* Main.storyboard */,
@@ -106,6 +144,8 @@
 				BBFD978D21E82C5A0037F596 /* MemoFormVC.swift */,
 				BBFD978F21E82C740037F596 /* MemoCell.swift */,
 				BBFD979121E82CD00037F596 /* MemoReadVC.swift */,
+				BB692ABE21E99F8300C2AC33 /* SideBarVC.swift */,
+				BB692AC021E9B8C400C2AC33 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,6 +182,7 @@
 				TargetAttributes = {
 					BBFD977221E81E4A0037F596 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -168,13 +209,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB692AB921E997DC00C2AC33 /* icon02.png in Resources */,
+				BB692AB721E997DC00C2AC33 /* sidemenu.png in Resources */,
+				BB692AB521E997DC00C2AC33 /* icon03.png in Resources */,
 				BB692AA621E992A100C2AC33 /* memo-background@2x.png in Resources */,
+				BB692ABB21E997DC00C2AC33 /* icon05.png in Resources */,
 				BBFD978421E81E4B0037F596 /* LaunchScreen.storyboard in Resources */,
 				BB692AA221E98DC700C2AC33 /* button-bg.png in Resources */,
+				BB692AB621E997DC00C2AC33 /* icon04.png in Resources */,
+				BB692ABD21E997EF00C2AC33 /* profile-bg.png in Resources */,
 				BBFD978121E81E4B0037F596 /* Assets.xcassets in Resources */,
+				BB692AB421E997DC00C2AC33 /* icon06.png in Resources */,
 				BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */,
 				BB692AA421E9929B00C2AC33 /* warning-icon-60@2x.png in Resources */,
 				BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */,
+				BB692ABA21E997DC00C2AC33 /* account@2x.jpg in Resources */,
+				BB692AB821E997DC00C2AC33 /* icon01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +240,11 @@
 				BBFD979021E82C740037F596 /* MemoCell.swift in Sources */,
 				BBFD979221E82CD00037F596 /* MemoReadVC.swift in Sources */,
 				BBFD979421E82CEB0037F596 /* MemoData.swift in Sources */,
+				BB692ABF21E99F8300C2AC33 /* SideBarVC.swift in Sources */,
+				BB692AAB21E9977300C2AC33 /* SWRevealViewController.m in Sources */,
 				BBFD977F21E81E4A0037F596 /* GMemo.xcdatamodeld in Sources */,
 				BBFD978E21E82C5A0037F596 /* MemoFormVC.swift in Sources */,
+				BB692AC121E9B8C400C2AC33 /* ProfileVC.swift in Sources */,
 				BBFD977721E81E4A0037F596 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M6N9923S8;
 				INFOPLIST_FILE = GMemo/Info.plist;
@@ -347,6 +401,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = proj.gunw.GMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMemo/GMemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -356,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M6N9923S8;
 				INFOPLIST_FILE = GMemo/Info.plist;
@@ -365,6 +422,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = proj.gunw.GMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMemo/GMemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
