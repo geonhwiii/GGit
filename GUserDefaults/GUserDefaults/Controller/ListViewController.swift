@@ -31,7 +31,26 @@ class ListViewController: UITableViewController {
         plist.synchronize() // 동기화
     }
     
+    @IBAction func edit(_ sender: UITapGestureRecognizer) {
+        let alert = UIAlertController(title: nil, message: "이름을 입력하세요", preferredStyle: .alert)
+        alert.addTextField() {
+            $0.text = self.name.text
+        }
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { (_) in
+            let value = alert.textFields?[0].text
+            
+            let plist = UserDefaults.standard
+            plist.setValue(value, forKey: "name")
+            plist.synchronize()
+            
+            self.name.text = value
+        })
+        self.present(alert, animated: false, completion: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
         if indexPath.row == 0 {
             // 입력이 가능한 알림창을 띄워 이름을 수정할 수 있게 한다.
             let alert = UIAlertController(title: nil, message: "이름을 입력하세요", preferredStyle: .alert)
@@ -54,10 +73,15 @@ class ListViewController: UITableViewController {
             // 알림창을 띄움
             self.present(alert, animated: false, completion: nil)
         }
+         */
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let plist = UserDefaults.standard
         
+        self.name.text = plist.string(forKey: "name")
+        self.married.isOn = plist.bool(forKey: "married")
+        self.gender.selectedSegmentIndex = plist.integer(forKey: "gender")
     }
 
 
