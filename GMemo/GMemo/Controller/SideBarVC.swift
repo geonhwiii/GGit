@@ -14,6 +14,7 @@ class SideBarVC: UITableViewController {
     let namelabel = UILabel()
     let emailLabel = UILabel()
     let profileImage = UIImageView()
+    let uinfo = UserInfoManager() // 개인 정보 관리 매니저
 
     // 목록 데이터 배열
     let titles = ["새글 작성하기", "친구 새글", "달력으로 보기", "공지사항", "통계", "계정 관리"]
@@ -77,7 +78,6 @@ class SideBarVC: UITableViewController {
         
         // 이름 레이블의 속성을 정의하고, 헤더 뷰에 추가
         self.namelabel.frame = CGRect(x: 70, y: 15, width: 100, height: 30)
-        self.namelabel.text = "건휘"
         self.namelabel.textColor = UIColor.white
         self.namelabel.font = UIFont.boldSystemFont(ofSize: 15)
         self.namelabel.backgroundColor = UIColor.clear
@@ -85,23 +85,23 @@ class SideBarVC: UITableViewController {
         
         // email 속성 저의, 헤더 뷰에 추가
         self.emailLabel.frame = CGRect(x: 70, y: 30, width: 100, height: 30)
-        self.emailLabel.text = "gunw@gmail.com"
         self.emailLabel.textColor = UIColor.white
         self.emailLabel.font = UIFont.systemFont(ofSize: 11)
         
         headerView.addSubview(self.emailLabel)
         
-        // 기본 이미지 구현
-        let defaultProfile = UIImage(named: "account.jpg")
-        self.profileImage.image = defaultProfile
         self.profileImage.frame = CGRect(x: 10, y: 10, width: 50, height: 50)
-        
-        
         // 프로필 이미지 둥글게
         self.profileImage.layer.cornerRadius = (self.profileImage.frame.width / 2)
         self.profileImage.layer.borderWidth = 0 // 테두리 두께 0
         self.profileImage.layer.masksToBounds = true
         view.addSubview(self.profileImage)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.namelabel.text = self.uinfo.name ?? "Guest"
+        self.emailLabel.text = self.uinfo.account ?? ""
+        self.profileImage.image = self.uinfo.profile
     }
 
     /*

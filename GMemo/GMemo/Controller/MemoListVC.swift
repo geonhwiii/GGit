@@ -15,6 +15,12 @@ class MemoListVC: UITableViewController {
 
     
     override func viewWillAppear(_ animated: Bool) {
+        let ud = UserDefaults.standard
+        if ud.bool(forKey: UserInfoKey.tutorial) == false {
+            let vc = self.instanceTutorialVC(name: "MasterVC")
+            self.present(vc!, animated: false)
+            return
+        }
         super.viewWillAppear(animated)
         // 테이블 데이터를 리로드. 이에 따라 행을 구성하는 로직이 재실행
         self.tableView.reloadData()

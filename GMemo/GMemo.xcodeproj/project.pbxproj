@@ -24,6 +24,10 @@
 		BB692ABF21E99F8300C2AC33 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB692ABE21E99F8300C2AC33 /* SideBarVC.swift */; };
 		BB692AC121E9B8C400C2AC33 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB692AC021E9B8C400C2AC33 /* ProfileVC.swift */; };
 		BBB633D421EC6C7000DA57C9 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB633D321EC6C7000DA57C9 /* UserInfoManager.swift */; };
+		BBB633D621ED77AC00DA57C9 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB633D521ED77AC00DA57C9 /* Tutorial.storyboard */; };
+		BBB633D921ED7BCD00DA57C9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB633D821ED7BCD00DA57C9 /* Utils.swift */; };
+		BBB633DE21ED7D1800DA57C9 /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB633DD21ED7D1800DA57C9 /* TutorialContentsVC.swift */; };
+		BBB633E021ED802300DA57C9 /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB633DF21ED802300DA57C9 /* TutorialMasterVC.swift */; };
 		BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */; };
 		BBFD977721E81E4A0037F596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD977621E81E4A0037F596 /* AppDelegate.swift */; };
 		BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFD977A21E81E4A0037F596 /* Main.storyboard */; };
@@ -57,6 +61,10 @@
 		BB692ABE21E99F8300C2AC33 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
 		BB692AC021E9B8C400C2AC33 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		BBB633D321EC6C7000DA57C9 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		BBB633D521ED77AC00DA57C9 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		BBB633D821ED7BCD00DA57C9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BBB633DD21ED7D1800DA57C9 /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
+		BBB633DF21ED802300DA57C9 /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
 		BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cocoa.jpeg; sourceTree = "<group>"; };
 		BBFD977321E81E4A0037F596 /* GMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFD977621E81E4A0037F596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +91,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBB633D721ED77B600DA57C9 /* StroyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BBFD977A21E81E4A0037F596 /* Main.storyboard */,
+				BBB633D521ED77AC00DA57C9 /* Tutorial.storyboard */,
+			);
+			path = StroyBoard;
+			sourceTree = "<group>";
+		};
+		BBB633DC21ED7D0600DA57C9 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				BBB633DD21ED7D1800DA57C9 /* TutorialContentsVC.swift */,
+				BBB633DF21ED802300DA57C9 /* TutorialMasterVC.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
 		BBF43F9721E84E2C007BB0B0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,12 +148,13 @@
 		BBFD977521E81E4A0037F596 /* GMemo */ = {
 			isa = PBXGroup;
 			children = (
+				BBB633DC21ED7D0600DA57C9 /* Tutorial */,
 				BB692AAA21E9977300C2AC33 /* SWRevealViewController.h */,
 				BB692AA921E9977300C2AC33 /* SWRevealViewController.m */,
 				BB692AA821E9977200C2AC33 /* GMemo-Bridging-Header.h */,
 				BBF43F9721E84E2C007BB0B0 /* Resource */,
 				BBFD977621E81E4A0037F596 /* AppDelegate.swift */,
-				BBFD977A21E81E4A0037F596 /* Main.storyboard */,
+				BBB633D721ED77B600DA57C9 /* StroyBoard */,
 				BBFD978021E81E4B0037F596 /* Assets.xcassets */,
 				BBFD978221E81E4B0037F596 /* LaunchScreen.storyboard */,
 				BBFD978521E81E4B0037F596 /* Info.plist */,
@@ -136,6 +163,7 @@
 				BBFD979321E82CEB0037F596 /* MemoData.swift */,
 				BB692A9F21E98CBF00C2AC33 /* CSLogButton.swift */,
 				BBB633D321EC6C7000DA57C9 /* UserInfoManager.swift */,
+				BBB633D821ED7BCD00DA57C9 /* Utils.swift */,
 			);
 			path = GMemo;
 			sourceTree = "<group>";
@@ -223,6 +251,7 @@
 				BB692ABD21E997EF00C2AC33 /* profile-bg.png in Resources */,
 				BBFD978121E81E4B0037F596 /* Assets.xcassets in Resources */,
 				BB692AB421E997DC00C2AC33 /* icon06.png in Resources */,
+				BBB633D621ED77AC00DA57C9 /* Tutorial.storyboard in Resources */,
 				BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */,
 				BB692AA421E9929B00C2AC33 /* warning-icon-60@2x.png in Resources */,
 				BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */,
@@ -243,11 +272,14 @@
 				BBB633D421EC6C7000DA57C9 /* UserInfoManager.swift in Sources */,
 				BBFD979021E82C740037F596 /* MemoCell.swift in Sources */,
 				BBFD979221E82CD00037F596 /* MemoReadVC.swift in Sources */,
+				BBB633D921ED7BCD00DA57C9 /* Utils.swift in Sources */,
 				BBFD979421E82CEB0037F596 /* MemoData.swift in Sources */,
 				BB692ABF21E99F8300C2AC33 /* SideBarVC.swift in Sources */,
+				BBB633DE21ED7D1800DA57C9 /* TutorialContentsVC.swift in Sources */,
 				BB692AAB21E9977300C2AC33 /* SWRevealViewController.m in Sources */,
 				BBFD977F21E81E4A0037F596 /* GMemo.xcdatamodeld in Sources */,
 				BBFD978E21E82C5A0037F596 /* MemoFormVC.swift in Sources */,
+				BBB633E021ED802300DA57C9 /* TutorialMasterVC.swift in Sources */,
 				BB692AC121E9B8C400C2AC33 /* ProfileVC.swift in Sources */,
 				BBFD977721E81E4A0037F596 /* AppDelegate.swift in Sources */,
 			);
