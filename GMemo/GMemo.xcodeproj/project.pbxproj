@@ -23,6 +23,7 @@
 		BB692ABD21E997EF00C2AC33 /* profile-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BB692ABC21E997EF00C2AC33 /* profile-bg.png */; };
 		BB692ABF21E99F8300C2AC33 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB692ABE21E99F8300C2AC33 /* SideBarVC.swift */; };
 		BB692AC121E9B8C400C2AC33 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB692AC021E9B8C400C2AC33 /* ProfileVC.swift */; };
+		BBB633D421EC6C7000DA57C9 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB633D321EC6C7000DA57C9 /* UserInfoManager.swift */; };
 		BBF43F9921E84E65007BB0B0 /* cocoa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */; };
 		BBFD977721E81E4A0037F596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD977621E81E4A0037F596 /* AppDelegate.swift */; };
 		BBFD977C21E81E4A0037F596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFD977A21E81E4A0037F596 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		BB692ABC21E997EF00C2AC33 /* profile-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-bg.png"; sourceTree = "<group>"; };
 		BB692ABE21E99F8300C2AC33 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
 		BB692AC021E9B8C400C2AC33 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		BBB633D321EC6C7000DA57C9 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 		BBF43F9821E84E65007BB0B0 /* cocoa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cocoa.jpeg; sourceTree = "<group>"; };
 		BBFD977321E81E4A0037F596 /* GMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFD977621E81E4A0037F596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				BBFD979521E82D7B0037F596 /* Controller */,
 				BBFD979321E82CEB0037F596 /* MemoData.swift */,
 				BB692A9F21E98CBF00C2AC33 /* CSLogButton.swift */,
+				BBB633D321EC6C7000DA57C9 /* UserInfoManager.swift */,
 			);
 			path = GMemo;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				BB692AA021E98CBF00C2AC33 /* CSLogButton.swift in Sources */,
 				BBFD978C21E82C3E0037F596 /* MemoListVC.swift in Sources */,
+				BBB633D421EC6C7000DA57C9 /* UserInfoManager.swift in Sources */,
 				BBFD979021E82C740037F596 /* MemoCell.swift in Sources */,
 				BBFD979221E82CD00037F596 /* MemoReadVC.swift in Sources */,
 				BBFD979421E82CEB0037F596 /* MemoData.swift in Sources */,
