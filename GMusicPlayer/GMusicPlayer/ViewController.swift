@@ -75,6 +75,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.timer = nil
     }
     
+    /*
     func addViewsWithCode() {
         self.addPlayPauseButton()
         self.addTimeLabel()
@@ -185,6 +186,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         
     }
+   */
 
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         self.updateTimeLabelText(time: TimeInterval(sender.value))
@@ -192,7 +194,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.player.currentTime = TimeInterval(sender.value)
     }
     
-    // MARK: AVAudioPlayerDelegate
+    // MARK: - AVAudioPlayerDelegate
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
         guard let error: Error = error else {
             print("오디오 플레이어 디코드 오류발생")
