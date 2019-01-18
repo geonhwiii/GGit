@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="61T-TA-Mmy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nXI-gz-Y5Z">
+            <objects>
+                <viewController id="61T-TA-Mmy" customClass="ViewController" customModule="GUpDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NBQ-bb-7oN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5BM-my-xYi">
+                                <rect key="frame" x="100" y="50" width="175" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="횟수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rd-O9-z63">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="20.5"/>
+                                        <color key="backgroundColor" red="1" green="0.2624018709" blue="0.2336861734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UP / DOWN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARQ-yV-bSJ">
+                                        <rect key="frame" x="0.0" y="30.5" width="175" height="20.5"/>
+                                        <color key="backgroundColor" red="1" green="0.2624018709" blue="0.2336861734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bj8-08-dna">
+                                <rect key="frame" x="20" y="125" width="335" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="숫자 입력 (최대 25)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q0C-YV-doW">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SBo-jC-uKt">
+                                <rect key="frame" x="157.5" y="171" width="60" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fw1-KM-4Sq">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="SUBMIT"/>
+                                        <connections>
+                                            <action selector="submitButton:" destination="61T-TA-Mmy" eventType="touchUpInside" id="CLV-ck-RLg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYh-sv-zAe">
+                                        <rect key="frame" x="0.0" y="38" width="60" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.2624018709" blue="0.2336861734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="RESET"/>
+                                        <connections>
+                                            <action selector="resetButton:" destination="61T-TA-Mmy" eventType="touchUpInside" id="qyV-LZ-ijc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="VWM-9q-dGz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="5BM-my-xYi" firstAttribute="top" secondItem="jKX-XU-2sD" secondAttribute="top" constant="30" id="7MG-kJ-9pn"/>
+                            <constraint firstItem="bj8-08-dna" firstAttribute="top" secondItem="5BM-my-xYi" secondAttribute="bottom" constant="24" id="7bw-1L-b1I"/>
+                            <constraint firstItem="SBo-jC-uKt" firstAttribute="centerX" secondItem="NBQ-bb-7oN" secondAttribute="centerX" id="av9-V7-zcj"/>
+                            <constraint firstItem="jKX-XU-2sD" firstAttribute="trailing" secondItem="bj8-08-dna" secondAttribute="trailing" constant="20" id="jhp-Xn-Zx8"/>
+                            <constraint firstItem="jKX-XU-2sD" firstAttribute="trailing" secondItem="5BM-my-xYi" secondAttribute="trailing" constant="100" id="pSr-Ay-oPw"/>
+                            <constraint firstItem="5BM-my-xYi" firstAttribute="leading" secondItem="jKX-XU-2sD" secondAttribute="leading" constant="100" id="v4u-CA-kIX"/>
+                            <constraint firstItem="bj8-08-dna" firstAttribute="leading" secondItem="jKX-XU-2sD" secondAttribute="leading" constant="20" id="w1E-h9-SsB"/>
+                            <constraint firstItem="SBo-jC-uKt" firstAttribute="top" secondItem="bj8-08-dna" secondAttribute="bottom" constant="16" id="xha-lL-4pl"/>
+                            <constraint firstItem="5BM-my-xYi" firstAttribute="centerX" secondItem="NBQ-bb-7oN" secondAttribute="centerX" id="xjp-8b-qhG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jKX-XU-2sD"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RgM-Zq-qVj" appends="YES" id="bBW-4Y-u2X"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="7rd-O9-z63" id="pmH-OD-ySn"/>
+                        <outlet property="inputField" destination="Q0C-YV-doW" id="cjj-wg-9zY"/>
+                        <outlet property="submitBtn" destination="Fw1-KM-4Sq" id="Kn3-Vs-zIb"/>
+                        <outlet property="upDownLabel" destination="ARQ-yV-bSJ" id="rn3-N9-1t4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9o-sd-H4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RgM-Zq-qVj">
+                    <connections>
+                        <action selector="tapGesture:" destination="61T-TA-Mmy" id="4K7-9W-D56"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-13.6" y="164.16791604197903"/>
+        </scene>
+    </scenes>
+</document>
